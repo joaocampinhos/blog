@@ -4,9 +4,9 @@
 
 header {
   padding-bottom: 1rem;
-  margin-bottom: 3rem;
   @media (min-width: 34em)
   {
+    margin-bottom: 3rem;
     padding-top: 1rem;
     text-align: right;
   }
@@ -20,9 +20,11 @@ header {
 
 .header-title {
   margin-top: 0;
-  margin-bottom: 0;
+  text-align: center;
   @media (min-width: 34em)
   {
+    margin-bottom: 0;
+    text-align: left;
     float: left;
   }
 }
@@ -31,6 +33,11 @@ header {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  text-align: center;
+  @media (min-width: 34em)
+  {
+    text-align: right;
+  }
 }
 
 .nav li {
