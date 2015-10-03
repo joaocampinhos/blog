@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container">
+      <header>
+        <h3 class="header-title">
+          <a href="http://campinhos.pt" title="Home">{{ site.author.name }}</a>
+        </h3>
+        <ul class="nav">
+          <li><a href="/">Blog</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+
+    </div>
+
+  </body>
+</html>

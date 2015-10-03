@@ -1,9 +1,19 @@
-<!doctype html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-      <p>cenas</p>
-    </body>
-</html>
+---
+layout: default
+title: Blog
+---
+{% for post in site.posts %}
+  {% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if currentyear != year %}
+    {% unless forloop.first %}
+      </ul>
+    {% endunless %}
+    <h2>{{ currentyear }}</h2>
+    <ul class="archive">
+    {% capture year %}{{ currentyear }}{% endcapture %}
+  {% endif %}
+  <li>
+    <span class="archive-date">{{ post.date | date: "%A %B %-d %Y" }}</span>
+    <a class="archive-title" href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}

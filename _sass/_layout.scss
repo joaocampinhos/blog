@@ -1,0 +1,29 @@
+// Layout
+//
+// Styles for managing the structural hierarchy of the site.
+
+.container {
+  max-width: 32rem;
+  padding: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+  @media (min-width: 38em) {
+    padding: 1.5rem;
+  }
+}
+
+.archive {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.archive-date {
+  float: right;
+  color: #aaa;
+}
+
+.archive-title {
+  font-family: 'Montserrat', sans-serif;
+  background-image: none;
+}

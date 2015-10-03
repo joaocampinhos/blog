@@ -1,0 +1,46 @@
+// Header
+//
+// Small header with navigation
+
+header {
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  @media (min-width: 34em)
+  {
+    padding-top: 1rem;
+    text-align: right;
+  }
+  h3 {
+    a {
+      color: #333;
+      background-image: none;
+    }
+  }
+}
+
+.header-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  @media (min-width: 34em)
+  {
+    float: left;
+  }
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li + li {
+  margin-left: .5rem;
+}
+
+.nav a {
+  background-image: none;
+}
