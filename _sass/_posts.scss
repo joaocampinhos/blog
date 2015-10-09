@@ -62,8 +62,13 @@
 
 // After posts
 .after-post {
-  border-top: 1px solid #eee;
+  margin-top: 2rem;
+  padding: 0.75rem 1rem;
   text-align: center;
-  line-height: 3em; 
+  background-color: #EEE;
+  a {
+    background-image: none;
+    color: #FF4F4E;
+  }
 }
 
