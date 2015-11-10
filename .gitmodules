@@ -1,0 +1,3 @@
+[submodule "Drafts"]
+  path = _drafts
+  url = git@github.com:joaocampinhos/drafts.git
