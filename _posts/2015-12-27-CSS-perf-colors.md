@@ -23,7 +23,7 @@ background-color: RebeccaPurple;
 background-color: #663399;
 background-color: #639;
 background-color: rgb(102,51,153);
-background-color: hsl(270%,50%,40%);
+background-color: hsl(270,50%,40%);
 {% endhighlight %}
 
 The question is: Which one should I use? If we aproach this from a size prespective, `#639` is the smalest and thereof the best! But is it always like that? let's analyze this further.
@@ -52,7 +52,7 @@ And I created three revisions to test three different things.
   + lower case hex
   + upper case hex
 
-You can check the tests and results [here](http://jsperf.com/csscolors). You can even run the tests yourself to compare with my results.
+You can check the tests and results [here](http://jsperf.com/colors). You can even run the tests yourself to compare with my results.
 
 ##The Results
 
