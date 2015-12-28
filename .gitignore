@@ -3,3 +3,4 @@ _site
 _drafts
 .ruby-version
 .sass-cache
+.jekyll-metadata
