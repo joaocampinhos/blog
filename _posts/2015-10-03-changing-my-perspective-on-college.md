@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Changing my perspective on college
+description: My opinions and struggles about education in general, and college in particular
 ---
 
 Let me start this post by saying that I’m not a great student. Don’t get me wrong, I love to learn, but college (and school in general) is completely broken and an update is urgently needed, but I’ll leave that for another post.

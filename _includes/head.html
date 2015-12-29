@@ -20,6 +20,22 @@
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/atom.xml">
 
+  <!-- Meta meta -->
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@joaocampinhos">
+  <meta name="twitter:site" content="@joaocampinhos">
+  <meta name="twitter:domain" content="blog.campinhos.pt">
+  <meta name="twitter:title" content="{{ page.title }} &middot; {{ site.author.name }}">
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% endif %}
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

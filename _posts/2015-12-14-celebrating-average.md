@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Celebrating Average
+description: How to be a better average person and still exceed expectations
 ---
 
 Mom always said to give it all and always try to best myself.

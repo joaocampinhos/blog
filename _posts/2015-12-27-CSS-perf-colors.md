@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CSS perf: Colors"
+description: Taking CSS performance a step further when defining colors
 ---
 
 Let's face it, performance **is** important.
