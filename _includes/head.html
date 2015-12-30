@@ -21,19 +21,19 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/atom.xml">
 
   <!-- Meta meta -->
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-  {% else %}
-    <meta name="description" content="{{ site.description }}">
-  {% endif %}
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@joaocampinhos">
   <meta name="twitter:site" content="@joaocampinhos">
   <meta name="twitter:domain" content="blog.campinhos.pt">
   <meta name="twitter:title" content="{{ page.title }} &middot; {{ site.author.name }}">
+  <meta name="twitter:image" content="http://gravatar.com/avatar/b4e15cc67a93380cbf8f2a23b355f380?s=300">
   {% if page.description %}
     <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="description" content="{{ site.description }}">
   {% endif %}
 
   <script>
