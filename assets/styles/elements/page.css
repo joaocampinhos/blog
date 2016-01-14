@@ -1,0 +1,9 @@
+html {
+  min-height: 100%;
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}

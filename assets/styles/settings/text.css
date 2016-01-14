@@ -1,0 +1,18 @@
+:root {
+
+  --body-font-size: 18px;
+  --line-height: 1.5;
+  --font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: bold;
+  --heading-line-height: 1.25;
+  --monospace-font-family: 'Source Code Pro', Consolas, monospace;
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+  --bold-font-weight: bold;
+
+}

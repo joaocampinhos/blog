@@ -2,6 +2,7 @@
 layout: post
 title: Hello World!
 description: The first post. So it begins
+category: meta
 ---
 
 This is the first post to mark the beginning of this blog.

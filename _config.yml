@@ -4,5 +4,5 @@ author:
 url: http://blog.campinhos.pt
 title: João Campinhos
 description: João Campinhos' Blog
-sass:
-  style: compressed
+permalink: /blog/:title
+exclude: ["README.md", "assets",  "CNAME"]

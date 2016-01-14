@@ -5,23 +5,19 @@
 
   <body>
 
-    <div class="container">
-      <header>
-        <h3 class="header-title">
-          <a href="http://campinhos.pt" title="Home">{{ site.author.name }}</a>
-        </h3>
-        <ul class="nav">
-          <li><a href="/">Blog</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="https://github.com/joaocampinhos/ama/blob/master/readme.md">Questions</a></li>
-        </ul>
-      </header>
+    <header>
+      <ul class="caps list-reset flex">
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/work">Work</a></li>
+        <li><a href="/">João Campinhos</a></li>
+        <li><a href="/work">About Me</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </header>
 
-      <main>
-        {{ content }}
-      </main>
-
-    </div>
+    <main>
+      {{ content }}
+    </main>
 
   </body>
 </html>

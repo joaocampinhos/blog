@@ -2,19 +2,20 @@
 layout: default
 title: Blog
 ---
-{% for post in site.posts %}
-  {% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-  {% if currentyear != year %}
-    {% unless forloop.first %}
-      </ul>
-    {% endunless %}
-    <h2>{{ currentyear }}</h2>
-    <ul class="archive">
-    {% capture year %}{{ currentyear }}{% endcapture %}
-  {% endif %}
-  <li>
-    <span class="archive-date hide-mobile">{{ post.date | date: "%A, %B %-d" }}</span>
-    <span class="archive-date hide-desktop">{{ post.date | date: "%b %d" }}</span>
-    <a class="archive-title" href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
+
+<div class="inverse center">
+  <h1 class="caps">João Campinhos</h1>
+  <h3>Superhero by day, proficient coder by night.</h3>
+</div>
+
+<div class="center">
+  <h2 class="caps primary">Recent Articles</h2>
+  {% for post in site.posts limit:3 %}
+  <div>
+    <a href="{{ post.url }}"><h4 class="caps">{{ post.title }}</h4></a>
+    <p class="code">{{ post.date | date: "%B %d, %Y" }}</p>
+  </div>
+  {% endfor %}
+  <a href="/archive">Older Articles</a>
+</div>
+

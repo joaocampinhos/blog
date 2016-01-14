@@ -4,3 +4,4 @@ _drafts
 .ruby-version
 .sass-cache
 .jekyll-metadata
+node_modules

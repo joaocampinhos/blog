@@ -1,0 +1,6 @@
+.primary { color: var(--color-primary); }
+
+.inverse {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}

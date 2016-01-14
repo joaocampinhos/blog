@@ -2,6 +2,7 @@
 layout: post
 title: These aren't the tools you're looking for
 description: The state of front-end tools and how to cope with the insanity
+category: development
 ---
 
 Coders love their tools don’t they? As they should. Whether it’s a bloated IDE or a minimal text editor, a huge opinionated framework or a simplistic library, tools are a critical part of a programmer’s job. I love them too, but sometimes it’s easy to be overwhelmed by the huge amount of tools around us. And if you do any kind of front-end development, it gets even worse. Any developer that is not living under a rock can sense the insanity in the air.

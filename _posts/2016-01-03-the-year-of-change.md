@@ -2,6 +2,7 @@
 layout: post
 title: The year of change
 description: 2016 is probably going to be the most stressful year ever, and I couldn't be more excited about it!...
+category: personal
 ---
 
 2016 is probably going to be the most stressful year ever, and I couldn't be more excited about it!

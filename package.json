@@ -1,0 +1,29 @@
+{
+  "name": "projectos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Primedice.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.2.2",
+    "babel": "^6.3.26",
+    "babel-core": "^6.3.26",
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.11.0",
+    "cssnano": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-browser-reporter": "^0.4.0",
+    "postcss-cssnext": "^2.3.0",
+    "postcss-import": "^7.1.3",
+    "postcss-nested": "^1.0.0",
+    "postcss-reporter": "^1.3.0",
+    "postcss-url": "^5.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "João Campinhos",
+  "license": "MIT"
+}
