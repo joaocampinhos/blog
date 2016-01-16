@@ -1,8 +1,8 @@
 author:
   name: João Campinhos
   email: joao@campinhos.pt
-url: http://blog.campinhos.pt
+url: http://campinhos.pt
 title: João Campinhos
 description: João Campinhos' Blog
 permalink: /blog/:title
-exclude: ["README.md", "assets",  "CNAME"]
+exclude: ["README.md", "assets", "node_modules", "CNAME"]

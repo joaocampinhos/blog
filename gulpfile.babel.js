@@ -36,6 +36,11 @@ gulp.task('css', () => {
   .pipe(browserSync.stream())
 })
 
+gulp.task('watch', function () {
+  gulp.watch('assets/**/*.css', ['css']);
+  gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+});
+
 //gulp.task('serve', ['css'], () => {
 //  browserSync.init({
 //    server: dist
