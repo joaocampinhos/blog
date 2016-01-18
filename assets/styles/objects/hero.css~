@@ -1,0 +1,20 @@
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url("/assets/images/brand.jpg");
+}
+
+.hero h1 {
+  font-size: 300%;
+  letter-spacing: 0.5em;
+  line-height: normal;
+  margin-bottom: 0.5em;
+  line-height: 1;
+}
+
+.hero p {
+  font-family: var(--heading-font-family);
+}
+
+.hero :first-child {margin-top: 0;}
+.hero :last-child {margin-bottom: 0;}

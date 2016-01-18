@@ -3,6 +3,7 @@ import nano from 'cssnano'
 import url from 'postcss-url'
 import postcss from 'gulp-postcss'
 import nested from 'postcss-nested'
+import imagemin from 'gulp-imagemin'
 import cssnext from 'postcss-cssnext'
 import atimport from 'postcss-import'
 import browserSync from 'browser-sync'
@@ -14,17 +15,18 @@ import breporter from 'postcss-browser-reporter'
 const dist = 'public/'
 
 const sources = {
-  styles: 'assets/styles/'
+  styles: 'assets/styles/',
+  images: 'assets/images/'
 }
 
-gulp.task('css', () => {
+gulp.task('styles', () => {
   gulp.src(sources.styles+'styles.css')
   .pipe(sourcemaps.init())
   .pipe(postcss([
     atimport,
     url,
     nested,
-    nano({autoprefixer: false, calc: false}),
+    //nano({autoprefixer: false, calc: false}),
     cssnext,
     autoprefixer,
     breporter,
@@ -33,20 +35,51 @@ gulp.task('css', () => {
   .on('error', (err) => { console.log(err.message) })
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest(dist))
-  .pipe(browserSync.stream())
 })
 
-gulp.task('watch', function () {
-  gulp.watch('assets/**/*.css', ['css']);
-  gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
-});
+gulp.task('images', () => {
+  gulp.src(sources.images+'**/*')
+  .pipe(imagemin({
+    progressive: true,
+    interlaced: true
+  }))
+  .pipe(gulp.dest(dist+'images'))
+})
 
-//gulp.task('serve', ['css'], () => {
-//  browserSync.init({
-//    server: dist
-//  })
-//  gulp.watch(sources.styles+'**/*.css', ['css'])
-//  gulp.watch(dist+'*.html').on('change', browserSync.reload)
-//})
+gulp.task('scripts', () => {
+  return console.log('epa')
+})
 
-gulp.task('default', ['css'])
+gulp.task('jekyll', (done) => {
+  var child = require('child_process').spawn('jekyll', ['build'], {cwd: process.cwd()}),
+    stderr = ''
+
+    child.stderr.setEncoding('utf8');
+    child.stderr.on('data', function (data) {
+      stderr += data;
+      console.log(data);
+      browserSync.notify('<span style="color:red">'+data+'</span>', 10000);
+    });
+
+    child.on('close', function(code) {
+      if (code===0) browserSync.reload();
+      done()
+    });
+      /*
+  return require('child_process').spawn('jekyll', ['build'], {stdio: ['ignore', 'ignore', process.stderr]})
+  .on('close', () => {
+  })
+    */
+})
+
+gulp.task('serve', ['styles', 'images', 'scripts', 'jekyll'], () => {
+  browserSync.init({
+    server: '_site'
+  })
+  gulp.watch('assets/styles/**/*.css', ['styles', 'jekyll'])
+  gulp.watch('assets/images/**/*', ['images', 'jekyll'])
+  gulp.watch('assets/scripts/**/*.js', ['scripts', 'jekyll'])
+  gulp.watch(['*.html', '**/*.md', '_includes/*.html', '_layouts/*.html'], ['jekyll'])
+})
+
+gulp.task('default', ['serve'])

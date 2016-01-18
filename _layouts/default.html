@@ -3,21 +3,41 @@
 
   {% include head.html %}
 
-  <body>
+  {% if page.category %}
+    <body class=theme-{{page.category}}>
+  {% else %}
+    <body>
+  {% endif %}
 
-    <header>
-      <ul class="caps list-reset flex">
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/">João Campinhos</a></li>
-        <li><a href="/work">About Me</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </header>
+    <nav>
+      <a href="#menu">
+        <img src="menu.svg" alt="menu">
+      </a>
+      <div class="caps list-reset flex flex-justify">
+        <div class="center flex flex-justify" style="width: 30%; margin: auto">
+          <a href="/blog">Blog</a>
+          <a href="/work">Work</a>
+        </div>
+        <div class="center">
+          <a href="/">João Campinhos</a>
+        </div>
+        <div class="center flex flex-justify" style="width: 30%; margin: auto">
+          <a href="/work">About Me</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </div>
+      <p class="center">João Campinhos</p>
+    </nav>
 
     <main>
       {{ content }}
     </main>
+
+    <footer class="p2 inverse">
+      Aqui fica o footer
+    </footer>
+
+    Aqui ficam os scripts!
 
   </body>
 </html>

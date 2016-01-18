@@ -1,0 +1,19 @@
+.spacing-xl {
+  letter-spacing: 1em;
+  text-indent: 0.5em;
+}
+
+.spacing-l {
+  letter-spacing: 0.5em;
+  text-indent: 0.25em;
+}
+
+.spacing-m {
+  letter-spacing: 0.2em;
+  text-indent: 0.1em;
+}
+
+.spacing-s {
+  letter-spacing: 0.1em;
+  text-indent: 0.05em;
+}

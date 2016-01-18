@@ -1,0 +1,27 @@
+@custom-selector :--button button, .button;
+@custom-selector :--enter :hover, :focus;
+
+
+:--button {
+  padding: 0.7rem 1.2rem;
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 2px;
+  color: var(--color-text);
+  background-color: transparent;
+}
+
+:--button:--enter{
+  color: color(var(--color-text) shade(20%));
+}
+
+.button-primary {
+  color: var(--color-primary);
+}
+.button-primary:--enter{
+  color: color(var(--color-primary) shade(20%));
+}
+
+.button-heading {
+  font-family: var(--heading-font-family);
+}

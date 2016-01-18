@@ -1,0 +1,8 @@
+.angle {
+  width: 10%;
+  height: 6px;
+  border: 0;
+  background: var(--color-primary);
+  mask-image: url(http://ibrahimjabbari.com/english/images/hr-12.png);
+}
+

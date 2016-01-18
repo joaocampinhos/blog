@@ -1,15 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date: "%A %B %-d %Y" }}</span>
-  {{ content }}
-  <br>
-  Feel free to <a href="https://twitter.com/joaocampinhos">tweet me</a> if you have any questions or want to discuss this post.
-  <p class="after-post">
-    Cannot wait for the next post? <a href="/atom.xml">Subscribe to the RSS feed.</a>
-  </p>
-
+<div>
+  <div class="center container-m mv4">
+    <h4 class="m0 caps color-{{page.category}} spacing-l">{{page.category}}</h4>
+    <h1 class="m1 caps color-black huge">{{ page.title }}</h1>
+    <span class="code">{{ page.date | date: "%B %d, %Y" }}</span>
+  </div>
+  <div class="post-body container-s">
+    {{ content }}
+  </div>
 </div>

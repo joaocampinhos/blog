@@ -1,0 +1,17 @@
+.container-m {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-s {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-xs {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

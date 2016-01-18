@@ -1,6 +1,12 @@
 .primary { color: var(--color-primary); }
+.color-development { color: var(--color-development); }
+.color-personal { color: var(--color-personal); }
 
 .inverse {
   background-color: var(--color-text);
   color: var(--color-background);
+}
+
+.color-black {
+  color: #000;
 }
