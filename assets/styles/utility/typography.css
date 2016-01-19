@@ -7,7 +7,7 @@
 
 .huge {
   line-height: 1.2;
-  font-size: 3.7rem;
+  font-size: calc(var(--body-font-size) * 5);
 }
 
 .left-align   { text-align: left; }
