@@ -10,18 +10,18 @@
   {% endif %}
 
     <nav class="o-nav">
-      <div class="m1 lg-hide c-hamburger" id="tg">
+      <div class="m1 hide-lg-up c-hamburger" id="tg">
         <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--top"></span>
         <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--middle"></span>
         <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--bottom"></span>
       </div>
-      <div class="caps mb1 mt1 list-reset flex flex-center flex-justify">
+      <div class="caps mb1 mt1 list-reset flex flex-center flex-justify hide-sm-down">
         <div class="lg-flex center flex o-nav__element">
           <a class="c-nav__element" href="/blog">Blog</a>
           <a class="c-nav__element" href="/work">Work</a>
         </div>
-        <div class="flex-grow center">
-          <a class="spacing-xl bg-color-{{page.category}} c-nav__title" href="/"><span class="sm-show">João</span> Campinhos</a>
+        <div class="center">
+          <a class="spacing-xl bg-color-{{page.category}} c-nav__title hide-sm-down" href="/">João Campinhos</a>
         </div>
         <div class="lg-flex center flex o-nav__element">
           <a class="c-nav__element" href="/work">About Me</a>
@@ -30,7 +30,7 @@
       </div>
     </nav>
 
-    <main>
+    <main class="mt1">
       {{ content }}
     </main>
 

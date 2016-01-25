@@ -22,12 +22,12 @@
 .flex-first { order: -1 }
 .flex-last  { order: 99999 }
 
-@media (--breakpoint-sm) {
+@media (--breakpoint-sm-up) {
   .sm-flex { display: flex }
 }
-@media (--breakpoint-md) {
+@media (--breakpoint-md-up) {
   .md-flex { display: flex }
 }
-@media (--breakpoint-lg) {
+@media (--breakpoint-lg-up) {
   .lg-flex { display: flex }
 }

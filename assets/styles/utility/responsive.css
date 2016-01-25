@@ -1,30 +1,25 @@
-.sm-show, .md-show, .lg-show {
-  display: none !important
+@media (--breakpoint-sm-up) {
+  .hide-sm-up { display: none !important }
 }
 
-@media (--breakpoint-sm) {
-  .sm-show { display: block !important }
+@media (--breakpoint-md-up) {
+  .hide-md-up { display: none !important }
 }
 
-@media (--breakpoint-md) {
-  .md-show { display: block !important }
+@media (--breakpoint-lg-up) {
+  .hide-lg-up { display: none !important }
 }
 
-@media (--breakpoint-lg) {
-  .lg-show { display: block !important }
+@media (--breakpoint-sm-down) {
+  .hide-sm-down { display: none !important }
 }
 
-
-@media (--breakpoint-sm) {
-  .sm-hide { display: none !important }
+@media (--breakpoint-md-down) {
+  .hide-md-down { display: none !important }
 }
 
-@media (--breakpoint-md) {
-  .md-hide { display: none !important }
-}
-
-@media (--breakpoint-lg) {
-  .lg-hide { display: none !important }
+@media (--breakpoint-lg-down) {
+  .hide-lg-down { display: none !important }
 }
 
 .display-none { display: none !important }

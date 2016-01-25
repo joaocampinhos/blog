@@ -20,6 +20,6 @@
   }
 }
 
-@media (--breakpoint-lg) {
+@media (--breakpoint-lg-up) {
   .c-nav__title { display: flex !important }
 }

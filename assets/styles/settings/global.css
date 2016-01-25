@@ -1,6 +1,10 @@
-@custom-media --breakpoint-sm (min-width: 40em);
-@custom-media --breakpoint-md (min-width: 52em);
-@custom-media --breakpoint-lg (min-width: 80em);
+@custom-media --breakpoint-sm-up (min-width: 40em);
+@custom-media --breakpoint-md-up (min-width: 52em);
+@custom-media --breakpoint-lg-up (min-width: 80em);
+
+@custom-media --breakpoint-sm-down (max-width: 40em);
+@custom-media --breakpoint-md-down (max-width: 52em);
+@custom-media --breakpoint-lg-down (max-width: 80em);
 
 :root {
 
