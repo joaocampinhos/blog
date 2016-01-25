@@ -557,8 +557,25 @@ float: left;
 @media (min-width: 52em) {
   .md-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
 }
-@media (min-width: 64em) {
+@media (min-width: 80em) {
   .lg-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex }
+}
+.o-nav {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.o-nav__element {
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 30%;
+  margin: 0 auto;
+  display: none !important;
+}
+
+@media (min-width: 80em) {
+  .o-nav__element { display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important }
 }
 
 .angle {
@@ -599,6 +616,84 @@ button:focus,
 
 .button-heading {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.c-hamburger {
+  position: absolute;
+  height: 24px;
+  width: 31px;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+.c-hamburger:hover {
+  opacity: .7;
+}
+.c-hamburger:is-open {
+  position: fixed;
+}
+
+.c-hamburger__element {
+  background-color: black;
+  border: none;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all .2s ease;
+  transition:  all .2s ease;
+  cursor: pointer;
+}
+
+.is-open > .c-hamburger--top {
+  -webkit-transform: translateY(10px) translateX(0) rotate(-45deg);
+          transform: translateY(10px) translateX(0) rotate(-45deg);
+}
+
+.c-hamburger--middle {
+  top: 10px;
+}
+
+.is-open > .c-hamburger--middle {
+  opacity: 0;
+}
+
+.c-hamburger--bottom {
+  top: 20px;
+}
+
+.is-open > .c-hamburger--bottom {
+  -webkit-transform: translateY(-10px) translateX(0) rotate(45deg);
+          transform: translateY(-10px) translateX(0) rotate(45deg);
+}
+.c-nav__element {
+  font-family: "Montserrat";
+  letter-spacing: 0.1em;
+  padding: 0 0.1em 0 0.2em;
+  color: #424242;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.c-nav__title {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: white;
+  padding: 0.2em 0 0.2em 1em;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  -webkit-transition: all .2s ease;
+  transition:  all .2s ease;
+}
+
+.c-nav__title:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 80em) {
+  .c-nav__title { display: -webkit-box !important; display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important }
 }
 /*@import 'components/post';*/
 
@@ -662,10 +757,17 @@ button:focus,
   letter-spacing: 0.1em;
   text-indent: 0.05em;
 }
-.primary { color: #cfba88; }
-.color-development { color: #336efb; }
-.color-personal { color: #fc5640; }
-.color-design { color: #2de68b; }
+.primary              { color: #cfba88;     }
+.color-development    { color: #336efb; }
+.color-personal       { color: #fc5640;    }
+.color-design         { color: #2de68b;      }
+.color-meta           { color: #cfba88;     }
+
+.bg-primary           { background-color: #cfba88;     }
+.bg-color-development { background-color: #336efb; }
+.bg-color-personal    { background-color: #fc5640;    }
+.bg-color-design      { background-color: #2de68b;      }
+.bg-color-meta        { background-color: #cfba88;     }
 
 .inverse {
   background-color: #424242;
@@ -746,6 +848,44 @@ button:focus,
 .pr4 { padding-right: 64px; padding-right: 4rem }
 .pb4 { padding-bottom: 64px; padding-bottom: 4rem }
 .pl4 { padding-left: 64px; padding-left: 4rem }
+.sm-show, .md-show, .lg-show {
+  display: none !important
+}
+
+@media (min-width: 40em) {
+  .sm-show { display: block !important }
+}
+
+@media (min-width: 52em) {
+  .md-show { display: block !important }
+}
+
+@media (min-width: 80em) {
+  .lg-show { display: block !important }
+}
+
+
+@media (min-width: 40em) {
+  .sm-hide { display: none !important }
+}
+
+@media (min-width: 52em) {
+  .md-hide { display: none !important }
+}
+
+@media (min-width: 80em) {
+  .lg-hide { display: none !important }
+}
+
+.display-none { display: none !important }
+
+.hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
 /*@import 'utility/themer.css';*/
 
 

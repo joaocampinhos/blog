@@ -9,24 +9,25 @@
     <body>
   {% endif %}
 
-    <nav>
-      <a href="#menu">
-        <img src="menu.svg" alt="menu">
-      </a>
-      <div class="caps list-reset flex flex-justify">
-        <div class="center flex flex-justify" style="width: 30%; margin: auto">
-          <a href="/blog">Blog</a>
-          <a href="/work">Work</a>
+    <nav class="o-nav">
+      <div class="m1 lg-hide c-hamburger" id="tg">
+        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--top"></span>
+        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--middle"></span>
+        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--bottom"></span>
+      </div>
+      <div class="caps mb1 mt1 list-reset flex flex-center flex-justify">
+        <div class="lg-flex center flex o-nav__element">
+          <a class="c-nav__element" href="/blog">Blog</a>
+          <a class="c-nav__element" href="/work">Work</a>
         </div>
-        <div class="center">
-          <a href="/">João Campinhos</a>
+        <div class="flex-grow center">
+          <a class="spacing-xl bg-color-{{page.category}} c-nav__title" href="/"><span class="sm-show">João</span> Campinhos</a>
         </div>
-        <div class="center flex flex-justify" style="width: 30%; margin: auto">
-          <a href="/work">About Me</a>
-          <a href="/contact">Contact</a>
+        <div class="lg-flex center flex o-nav__element">
+          <a class="c-nav__element" href="/work">About Me</a>
+          <a class="c-nav__element" href="/contact">Contact</a>
         </div>
       </div>
-      <p class="center">João Campinhos</p>
     </nav>
 
     <main>
@@ -38,6 +39,15 @@
     </footer>
 
   <script>unorphan('h1, h2, h3, p, li, .unorphan')</script>
+  <script>
+document.getElementById('tg').addEventListener('click', function(e) {
+  e.preventDefault();
+
+  this.classList.toggle('is-open');
+
+  //document.getElementById('overlay').classList.toggle('is-active');
+});
+  </script>
 
   </body>
 </html>

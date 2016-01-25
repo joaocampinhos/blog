@@ -3,6 +3,7 @@ layout: page
 title: blog
 description: About João Campinhos’ work and life
 permalink: /blog/
+category: meta
 ---
 
 <div class="mt4 mb4 container-s center">

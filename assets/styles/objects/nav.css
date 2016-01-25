@@ -1,0 +1,15 @@
+.o-nav {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.o-nav__element {
+  justify-content: space-around;
+  width: 30%;
+  margin: 0 auto;
+  display: none !important;
+}
+
+@media (--breakpoint-lg) {
+  .o-nav__element { display: flex !important }
+}

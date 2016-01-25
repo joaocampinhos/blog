@@ -1,0 +1,49 @@
+.c-hamburger {
+  position: absolute;
+  height: 24px;
+  width: 31px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:is-open {
+    position: fixed;
+  }
+}
+
+.c-hamburger__element {
+  background-color: black;
+  border: none;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition:  all .2s ease;
+  cursor: pointer;
+}
+
+.c-hamburger--top {
+  .is-open > & {
+    transform: translateY(10px) translateX(0) rotate(-45deg);
+  }
+}
+
+.c-hamburger--middle {
+  top: 10px;
+  .is-open > & {
+    opacity: 0;
+  }
+}
+
+.c-hamburger--bottom {
+  top: 20px;
+  .is-open > & {
+    transform: translateY(-10px) translateX(0) rotate(45deg);
+  }
+}
+

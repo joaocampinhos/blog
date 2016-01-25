@@ -1,0 +1,25 @@
+.c-nav__element {
+  font-family: "Montserrat";
+  letter-spacing: 0.1em;
+  padding: 0 0.1em 0 0.2em;
+  color: #424242;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.c-nav__title {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: white;
+  padding: 0.2em 0 0.2em 1em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition:  all .2s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (--breakpoint-lg) {
+  .c-nav__title { display: flex !important }
+}

@@ -1,7 +1,14 @@
-.primary { color: var(--color-primary); }
-.color-development { color: var(--color-development); }
-.color-personal { color: var(--color-personal); }
-.color-design { color: var(--color-design); }
+.primary              { color: var(--color-primary);     }
+.color-development    { color: var(--color-development); }
+.color-personal       { color: var(--color-personal);    }
+.color-design         { color: var(--color-design);      }
+.color-meta           { color: var(--color-primary);     }
+
+.bg-primary           { background-color: var(--color-primary);     }
+.bg-color-development { background-color: var(--color-development); }
+.bg-color-personal    { background-color: var(--color-personal);    }
+.bg-color-design      { background-color: var(--color-design);      }
+.bg-color-meta        { background-color: var(--color-primary);     }
 
 .inverse {
   background-color: var(--color-text);
