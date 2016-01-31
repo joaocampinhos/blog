@@ -3,6 +3,11 @@
   z-index: -1;
 }
 
+.o-nav__menu {
+  height: 1.25em;
+  line-height: 1.25em;
+}
+
 .o-nav__element,
 .o-nav__title {
   width: 33.33333%;
@@ -24,6 +29,10 @@
       display: table;
     }
     &:after { clear: both; }
+  }
+
+  .o-nav__title {
+    display: inline-block;
   }
 
 }
@@ -62,7 +71,7 @@
     height: 100%;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .o-nav__menu,

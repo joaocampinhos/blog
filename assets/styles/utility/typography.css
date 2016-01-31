@@ -10,6 +10,14 @@
   font-size: calc(var(--body-font-size) * 5);
 }
 
+@media (--breakpoint-sm-down) {
+
+  .huge {
+    font-size: calc(var(--body-font-size) * 4);
+  }
+
+}
+
 .left-align   { text-align: left; }
 .center       { text-align: center; }
 .right-align  { text-align: right; }

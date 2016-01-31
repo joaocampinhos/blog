@@ -459,7 +459,7 @@ html {
 
 @media (max-width: 40em) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 h1,
@@ -478,23 +478,34 @@ h3 { font-size: 20px; font-size: 1.25rem }
 h4 { font-size: 16px; font-size: 1rem }
 h5 { font-size: 14px; font-size: .875rem }
 h6 { font-size: 12px; font-size: .75rem }
-.post-body {
-  font-size: 18px;
-  line-height: 1.8;
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.post-body > p:first-child:first-letter {
-float: left;
+.post-body {
+  line-height: 1.5;
+}
+
+
+@media (min-width: 40em) {
+  .post-body > p:first-child:first-letter {
+    float: left;
     color: #000;
-    font-size: 112px;
     font-size: 7rem;
     line-height: 85px;
     padding-top: 10px;
     padding-right: 10px;
     padding-left: 3px;
-  font-family: "Montserrat";
+    font-family: "Montserrat";
     font-weight: 700 !important;
     margin-left: 0px !important;
+  }
+}
+img {
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+    vertical-align: middle; /* [3] */
 }
 
 .hero {
@@ -510,6 +521,12 @@ float: left;
   margin-bottom: 0.5em;
   font-size: 250%;
   line-height: normal;
+}
+
+@media (max-width: 40em) {
+  .hero h1 {
+    font-size: 150%;
+  }
 }
 
 .hero p {
@@ -577,6 +594,11 @@ float: left;
   z-index: -1;
 }
 
+.o-nav__menu {
+  height: 1.25em;
+  line-height: 1.25em;
+}
+
 .o-nav__element,
 .o-nav__title {
   width: 33.33333%;
@@ -600,6 +622,10 @@ float: left;
 
   .o-nav__element:after, .o-nav__title:after {
     clear: both;
+  }
+
+  .o-nav__title {
+    display: inline-block;
   }
 
 }
@@ -641,7 +667,7 @@ float: left;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .o-nav__menu,
@@ -1060,6 +1086,14 @@ button:focus,
   line-height: 1.2;
   font-size: 80px;
   font-size: 5rem;
+}
+
+@media (max-width: 40em) {
+
+  .huge {
+    font-size: 4rem;
+  }
+
 }
 
 .left-align   { text-align: left; }

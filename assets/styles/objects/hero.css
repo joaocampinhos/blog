@@ -11,6 +11,12 @@
   line-height: normal;
 }
 
+@media (--breakpoint-sm-down) {
+  .hero h1 {
+    font-size: 150%;
+  }
+}
+
 .hero p {
   font-family: var(--heading-font-family);
   font-size: 120%;

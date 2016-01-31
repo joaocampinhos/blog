@@ -51,7 +51,7 @@ gulp.task('scripts', () => {
 })
 
 gulp.task('jekyll', (done) => {
-  var child = require('child_process').spawn('jekyll', ['build'], {cwd: process.cwd()}),
+  var child = require('child_process').spawn('jekyll', ['build','--drafts'], {cwd: process.cwd()}),
     stderr = ''
 
     child.stderr.setEncoding('utf8');

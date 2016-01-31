@@ -16,7 +16,7 @@ html {
 
 @media (--breakpoint-sm-down) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
