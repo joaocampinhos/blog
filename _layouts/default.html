@@ -3,50 +3,59 @@
 
   {% include head.html %}
 
-  {% if page.category %}
-    <body class=theme-{{page.category}}>
-  {% else %}
-    <body>
-  {% endif %}
-
-    <nav class="o-nav">
-      <div class="m1 hide-lg-up c-hamburger" id="tg">
-        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--top"></span>
-        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--middle"></span>
-        <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--bottom"></span>
-      </div>
-      <div class="caps mb1 mt1 list-reset flex flex-center flex-justify hide-sm-down">
-        <div class="lg-flex center flex o-nav__element">
-          <a class="c-nav__element" href="/blog">Blog</a>
-          <a class="c-nav__element" href="/work">Work</a>
+  <nav class="o-nav">
+    <div class="m1 hide-lg-up c-hamburger" id="tg">
+      <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--top"></span>
+      <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--middle"></span>
+      <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--bottom"></span>
+    </div>
+    <div class="pt3 pb3 o-nav__overlay caps clearfix" id="overlay">
+      <div class="o-nav__menu hide-lg-up">
+        <div class="hide-lg-up o-nav__title center">
+          <a class="spacing-xl color-{{page.category}} c-nav__title" href="/">João Campinhos</a>
         </div>
-        <div class="center">
-          <a class="spacing-xl bg-color-{{page.category}} c-nav__title hide-sm-down" href="/">João Campinhos</a>
-        </div>
-        <div class="lg-flex center flex o-nav__element">
-          <a class="c-nav__element" href="/work">About Me</a>
-          <a class="c-nav__element" href="/contact">Contact</a>
+        <div class="o-nav__element center">
+          <a class="o-nav__item c-nav__item" href="/blog">Blog</a>
+          <a class="o-nav__item c-nav__item" href="/work">Work</a>
+          <a class="o-nav__item c-nav__item" href="/work">About Me</a>
+          <a class="o-nav__item c-nav__item" href="/contact">Contact</a>
         </div>
       </div>
-    </nav>
+      <div class="o-nav__menu hide-lg-down">
+        <div class="o-nav__element center">
+          <a class="o-nav__item c-nav__item" href="/blog">Blog</a>
+          <a class="o-nav__item c-nav__item" href="/work">Work</a>
+        </div>
+        <div class="o-nav__title center">
+          <a class="spacing-xl bg-color-{{page.category}} c-nav__title" href="/">João Campinhos</a>
+        </div>
+        <div class="o-nav__element center">
+          <a class="o-nav__item c-nav__item" href="/work">About Me</a>
+          <a class="o-nav__item c-nav__item" href="/contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <main class="mt1">
-      {{ content }}
-    </main>
+  <main>
+  {{ content }}
+  </main>
 
-    <footer class="p2 inverse">
-      Aqui fica o footer
-    </footer>
+  <footer class="p2 inverse">
+    Aqui fica o footer
+  </footer>
 
-  <script>unorphan('h1, h2, h3, p, li, .unorphan')</script>
+  <!--<script>unorphan('h1, h2, h3, p, li, .unorphan')</script>-->
   <script>
 document.getElementById('tg').addEventListener('click', function(e) {
   e.preventDefault();
 
   this.classList.toggle('is-open');
+  document.getElementById('overlay').classList.toggle('is-open');
 
   //document.getElementById('overlay').classList.toggle('is-active');
 });
+window.scrollTo(0,1);
   </script>
 
   </body>

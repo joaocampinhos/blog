@@ -2,12 +2,12 @@
 layout: default
 ---
 <div>
-  <div class="center container-m mv4">
+  <div class="center container-m pb4 pt4">
     <h4 class="m0 caps color-{{page.category}} spacing-l">{{page.category}}</h4>
     <h1 class="m1 caps color-black huge">{{ page.title }}</h1>
     <span class="code">{{ page.date | date: "%B %d, %Y" }}</span>
   </div>
-  <div class="post-body container-s">
+  <div class="post-body container-s p1">
     {{ content }}
   </div>
 </div>

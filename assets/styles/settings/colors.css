@@ -1,12 +1,19 @@
 :root {
 
-  --color-primary: #cfba88;
   --color-text: #424242;
   --color-background: #fff;
 
-  --color-development: #336efb;
-  --color-design:      #2de68b;
-  --color-personal:    #fc5640;
-  --color-misc:        #eeae4d;
+  --color-red:    #e44053;
+  --color-orange: #fc5640;
+  --color-yellow: #ffc036;
+  --color-gold:   #cfba88;
+  --color-green:  #28dba4;
+  --color-blue:   #336efb;
+  --color-purple: #70628e;
+
+  --color-primary:     var(--color-gold);
+  --color-development: var(--color-blue);
+  --color-design:      var(--color-green);
+  --color-personal:    var(--color-red);
 
 }

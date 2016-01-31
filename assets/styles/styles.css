@@ -19,6 +19,7 @@
 @import 'objects/container';
 @import 'objects/flex';
 @import 'objects/nav';
+@import 'objects/grid';
 
 @import 'components/angle-rule';
 @import 'components/button';

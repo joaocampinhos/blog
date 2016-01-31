@@ -6,6 +6,8 @@
 @custom-media --breakpoint-md-down (max-width: 52em);
 @custom-media --breakpoint-lg-down (max-width: 80em);
 
+@custom-selector :--enter :hover, :focus;
+
 :root {
 
 

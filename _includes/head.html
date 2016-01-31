@@ -3,6 +3,17 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  {% if page.category == 'development' %}
+  <meta name="theme-color" content="#336efb">
+  {% elsif page.category == 'design' %}
+  <meta name="theme-color" content="#28dba4">
+  {% elsif page.category == 'personal' %}
+  <meta name="theme-color" content="#e44053">
+  {% else %}
+  <meta name="theme-color" content="#cfba88">
+  {% endif %}
 
   <title>
       {{ page.title }} &middot; {{ site.author.name }}

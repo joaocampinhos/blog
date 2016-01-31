@@ -7,3 +7,18 @@ html {
   overflow-y: scroll;
   text-size-adjust: 100%;
 }
+
+@media (--breakpoint-md-down) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (--breakpoint-sm-down) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+

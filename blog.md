@@ -6,7 +6,7 @@ permalink: /blog/
 category: meta
 ---
 
-<div class="mt4 mb4 container-s center">
+<div class="pb4 container-s center">
   {% for post in site.posts %}
   <div class="mt3 mb3 container-xs">
     <h1 class="m0 caps color-black regular">

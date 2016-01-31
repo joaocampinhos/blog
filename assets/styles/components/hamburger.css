@@ -6,11 +6,11 @@
   z-index: 100;
   transition: opacity .25s ease;
 
-  &:hover {
+  &:--enter {
     opacity: .7;
   }
 
-  &:is-open {
+  &.is-open {
     position: fixed;
   }
 }

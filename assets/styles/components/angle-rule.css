@@ -4,5 +4,17 @@
   border: 0;
   background: var(--color-primary);
   mask-image: url(http://ibrahimjabbari.com/english/images/hr-12.png);
+
+}
+
+@media (--breakpoint-lg-down) {
+  /* fixes mask-image bug when displaying overlay menu */
+  .angle {
+    mask-image: initial;
+    height: 2px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: white;
+  }
 }
 
