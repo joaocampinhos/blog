@@ -425,3 +425,16 @@ td,
 th {
   padding: 0;
 }
+
+/**
+ * Some custom things
+ */
+
+abbr {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #424242;
+}

@@ -1,0 +1,16 @@
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid var(--color-grey-2);
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid var(--color-grey-2);
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: var(--color-grey-1);
+}
+

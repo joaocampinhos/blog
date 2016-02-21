@@ -3,6 +3,8 @@
 
   {% include head.html %}
 
+  {% assign current = page.url | downcase | split: '/' %}
+
   <nav class="o-nav">
     <div class="m1 hide-lg-up c-hamburger" id="tg">
       <span class="bg-color-{{page.category}} c-hamburger__element c-hamburger--top"></span>
@@ -15,23 +17,23 @@
           <a class="spacing-xl color-{{page.category}} c-nav__title" href="/">João Campinhos</a>
         </div>
         <div class="o-nav__element center">
-          <a class="o-nav__item c-nav__item" href="/blog">Blog</a>
-          <a class="o-nav__item c-nav__item" href="/work">Work</a>
-          <a class="o-nav__item c-nav__item" href="/work">About Me</a>
-          <a class="o-nav__item c-nav__item" href="/contact">Contact</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'blog' %} color-{{page.category}} {% endif %}" href="/blog">Blog</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'work' %} color-{{page.category}} {% endif %}" href="/work">Work</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'about' %} color-{{page.category}} {% endif %}" href="/about">About Me</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'contact' %} color-{{page.category}} {% endif %}" href="/contact">Contact</a>
         </div>
       </div>
       <div class="o-nav__menu hide-lg-down">
         <div class="o-nav__element center">
-          <a class="o-nav__item c-nav__item" href="/blog">Blog</a>
-          <a class="o-nav__item c-nav__item" href="/work">Work</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'blog' %} color-{{page.category}} {% endif %}" href="/blog">Blog</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'work' %} color-{{page.category}} {% endif %}" href="/work">Work</a>
         </div>
         <div class="o-nav__title center">
           <a class="spacing-xl bg-color-{{page.category}} c-nav__title" href="/">João Campinhos</a>
         </div>
         <div class="o-nav__element center">
-          <a class="o-nav__item c-nav__item" href="/work">About Me</a>
-          <a class="o-nav__item c-nav__item" href="/contact">Contact</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'about' %} color-{{page.category}} {% endif %}" href="/about">About Me</a>
+          <a class="o-nav__item c-nav__item {% if current[1] == 'contact' %} color-{{page.category}} {% endif %}" href="/contact">Contact</a>
         </div>
       </div>
     </div>
@@ -41,8 +43,8 @@
   {{ content }}
   </main>
 
-  <footer class="p2 inverse">
-    Aqui fica o footer
+  <footer class="center p2 inverse">
+    © 2016 João Campinhos • <a class="color-meta" href="/contact">contact</a>
   </footer>
 
   <!--<script>unorphan('h1, h2, h3, p, li, .unorphan')</script>-->

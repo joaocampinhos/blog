@@ -15,6 +15,10 @@
 @import 'elements/headings';
 @import 'elements/text';
 @import 'elements/images';
+@import 'elements/syntax';
+@import 'elements/code';
+@import 'elements/tables';
+@import 'elements/quotes';
 
 @import 'objects/hero';
 @import 'objects/container';

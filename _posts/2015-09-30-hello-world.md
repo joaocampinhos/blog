@@ -41,25 +41,47 @@ How about images? I can do images like a boss.
 
 ![swag](http://www.zacuto.com/wp-content/uploads/2013/10/stock-footage-guide1.jpg)
 
+> "I feel like I’m too busy writing history to read it." - Kanye West
+
+
 And tables
 
 <table>
   <thead>
     <tr>
       <th>smart</th>
+      <th>smarty</th>
       <th>tables</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Charlie</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+  </tbody>
   <tfoot>
     <tr>
       <td>are</td>
+      <td>smarty</td>
       <td>smart</td>
     </tr>
   </tfoot>
 </table>
 
 And code
-{% highlight js %}
+{% highlight javascript %}
 
 // Please no!
 function sum(a, b)
