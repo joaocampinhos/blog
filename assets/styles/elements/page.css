@@ -8,6 +8,22 @@ html {
   text-size-adjust: 100%;
 }
 
+::selection {
+  color: #fff;
+}
+
+::-moz-selection{
+  color: #fff;
+}
+
+hr {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+  border: 0;
+  width: 20%;
+  margin: 2em auto;
+}
+
 @media (--breakpoint-md-down) {
   html {
     font-size: 14px;
@@ -19,6 +35,8 @@ html {
     font-size: 16px;
   }
 }
+
+
 
 
 

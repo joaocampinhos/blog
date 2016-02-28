@@ -25,17 +25,16 @@
 @import 'objects/flex';
 @import 'objects/nav';
 @import 'objects/grid';
+@import 'objects/footnotes';
 
 @import 'components/angle-rule';
 @import 'components/button';
 @import 'components/hamburger';
 @import 'components/nav';
-/*@import 'components/post';*/
 
 @import 'utility/typography';
 @import 'utility/letter-spacing';
 @import 'utility/colors';
 @import 'utility/spacing';
 @import 'utility/responsive';
-/*@import 'utility/themer.css';*/
 

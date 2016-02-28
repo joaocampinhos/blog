@@ -5,14 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
 
+  <!--This is complex and not maintainable -->
   {% if page.category == 'development' %}
   <meta name="theme-color" content="#336efb">
+  <style>
+    ::selection,.footnote{background:#336efb}
+    ::-moz-selection{background:#336efb}
+    .reversefootnote{color:#336efb}
+  </style>
   {% elsif page.category == 'design' %}
   <meta name="theme-color" content="#28dba4">
+  <style>
+    ::selection,.footnote{background:#28dba4}
+    ::-moz-selection{background:#28dba4}
+    .reversefootnote{color:#28bda4}
+  </style>
   {% elsif page.category == 'personal' %}
   <meta name="theme-color" content="#e44053">
+  <style>
+    ::selection,.footnote{background:#e44053}
+    ::-moz-selection{background:#e44053}
+    .reversefootnote{color:#e44053}
+  </style>
   {% else %}
   <meta name="theme-color" content="#cfba88">
+  <style>
+    ::selection,.footnote{background:#cfba88}
+    ::-moz-selection{background:#cfba88}
+    .footnote,.reversefootnote{color:#cfba88}
+  </style>
   {% endif %}
 
   <title>
@@ -30,8 +51,6 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/atom.xml">
-
-  <script src="http://cdn.rawgit.com/rstacruz/unorphan/v1.0.1/index.js"></script>
 
   <!-- Meta meta -->
 
@@ -57,7 +76,5 @@
     ga('create', 'UA-68409872-1', 'campinhos.pt');
     ga('send', 'pageview');
   </script>
-
-
 
 </head>

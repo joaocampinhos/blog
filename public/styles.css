@@ -166,14 +166,14 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 60%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+  top: -1em;
 }
 
 sub {
@@ -464,6 +464,26 @@ html {
           text-size-adjust: 100%;
 }
 
+::-moz-selection {
+  color: #fff;
+}
+
+::selection {
+  color: #fff;
+}
+
+::-moz-selection{
+  color: #fff;
+}
+
+hr {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+  border: 0;
+  width: 20%;
+  margin: 2em auto;
+}
+
 @media (max-width: 52em) {
   html {
     font-size: 14px;
@@ -491,6 +511,32 @@ h3 { font-size: 20px; font-size: 1.25rem }
 h4 { font-size: 16px; font-size: 1rem }
 h5 { font-size: 14px; font-size: .875rem }
 h6 { font-size: 12px; font-size: .75rem }
+
+.post-body h1 {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 1.25em;
+  letter-spacing: 0.1em;
+}
+
+.post-body h2 {
+  opacity: 0.75;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+h1 + h2 {
+  margin-top: 0 !important;
+}
+
+h1 + p,
+h2 + p{
+  margin-top: 0.5em;
+}
 p {
   font-size: 16px;
   line-height: 1.5;
@@ -699,11 +745,11 @@ blockquote > p {
 .flex-column  { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column }
 .flex-wrap    { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap }
 
-.flex-center   { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center }
-.flex-baseline { -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; -ms-grid-row-align: baseline; align-items: baseline }
-.flex-stretch  { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; -ms-grid-row-align: stretch; align-items: stretch }
-.flex-start    { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; -ms-grid-row-align: flex-start; align-items: flex-start }
-.flex-end      { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; -ms-grid-row-align: flex-end; align-items: flex-end }
+.flex-center   { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center }
+.flex-baseline { -webkit-box-align: baseline; -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline }
+.flex-stretch  { -webkit-box-align: stretch; -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch }
+.flex-start    { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start }
+.flex-end      { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end }
 
 .flex-justify  { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between }
 
@@ -1086,6 +1132,30 @@ blockquote > p {
   }
 
 }
+.footnote {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 15px;
+  margin-left:3px;
+  color: white;
+  font-weight: bold;
+}
+
+.reversefootnote {
+  font-weight: bold;
+}
+
+.footnotes:before {
+  content: "FOOTNOTES";
+  display: block;
+  margin:3em 0 1em 0;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
 
 .angle {
   width: 10%;
@@ -1217,7 +1287,6 @@ button:focus,
 .c-nav__title:hover {
   opacity: 0.7;
 }
-/*@import 'components/post';*/
 
 .bold    { font-weight: bold; font-weight: bold; }
 .regular { font-weight: normal; }
@@ -1287,6 +1356,11 @@ button:focus,
   letter-spacing: 0.1em;
   text-indent: 0.05em;
 }
+.inverse {
+  background-color: #424242;
+  color: #fff;
+}
+
 .primary              { color: #cfba88;     }
 .color-development    { color: #336efb; }
 .color-personal       { color: #e44053;    }
@@ -1299,9 +1373,25 @@ button:focus,
 .bg-color-design      { background-color: #28dba4;      }
 .bg-color-meta        { background-color: #cfba88;     }
 
-.inverse {
-  background-color: #424242;
-  color: #fff;
+#meta:target > .color-meta,
+#meta:target > .primary {
+  background-color: #cfba88;
+  color: white;
+}
+
+#development:target > .color-development {
+  background-color: #336efb;
+  color: white;
+}
+
+#personal:target > .color-personal {
+  background-color: #e44053;
+  color: white;
+}
+
+#design:target > .color-design {
+  background-color: #28dba4;
+  color: white;
 }
 
 .color-black {
@@ -1411,7 +1501,6 @@ button:focus,
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/*@import 'utility/themer.css';*/
 
 
 /*# sourceMappingURL=styles.css.map */

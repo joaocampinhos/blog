@@ -1,3 +1,8 @@
+.inverse {
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
+
 .primary              { color: var(--color-primary);     }
 .color-development    { color: var(--color-development); }
 .color-personal       { color: var(--color-personal);    }
@@ -10,9 +15,25 @@
 .bg-color-design      { background-color: var(--color-design);      }
 .bg-color-meta        { background-color: var(--color-primary);     }
 
-.inverse {
-  background-color: var(--color-text);
-  color: var(--color-background);
+#meta:target > .color-meta,
+#meta:target > .primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+#development:target > .color-development {
+  background-color: var(--color-development);
+  color: white;
+}
+
+#personal:target > .color-personal {
+  background-color: var(--color-personal);
+  color: white;
+}
+
+#design:target > .color-design {
+  background-color: var(--color-design);
+  color: white;
 }
 
 .color-black {

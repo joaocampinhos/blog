@@ -1,0 +1,24 @@
+.footnote {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 15px;
+  margin-left:3px;
+  color: white;
+  font-weight: bold;
+}
+
+.reversefootnote {
+  font-weight: bold;
+}
+
+.footnotes:before {
+  content: "FOOTNOTES";
+  display: block;
+  margin:3em 0 1em 0;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}

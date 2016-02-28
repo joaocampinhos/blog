@@ -14,3 +14,31 @@ h3 { font-size: var(--h3) }
 h4 { font-size: var(--h4) }
 h5 { font-size: var(--h5) }
 h6 { font-size: var(--h6) }
+
+.post-body h1 {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 1.25em;
+  letter-spacing: 0.1em;
+}
+
+.post-body h2 {
+  opacity: 0.75;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+h1 + h2 {
+  margin-top: 0 !important;
+}
+
+h1 + p,
+h2 + p{
+  margin-top: 0.5em;
+}
+
+

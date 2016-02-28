@@ -38,31 +38,28 @@ As it turns out the best thing you can do is to accept your averageness. Now I'm
 
 <iframe width="100%" height="343" src="https://www.youtube.com/embed/NDQoMv4WBlc?start=63&end=84" frameborder="0" allowfullscreen></iframe>
 
-###But how to celebrate it?
+#But how to celebrate it?
 
 The keyword here is happiness.
 You need to do what makes you happy.
 If that is pursuing something that you will never achieve, then so be it.
 But since I believe my average reader has a bit of sense inside their head, then allow me to tell you what I do, because if it works for me then chances are it works for you too.
 
-####Lower your ambitions
+##Lower your ambitions
 Like killer mike says, if you lower your ambitions, them chances are you are going to achieve things faster. Don't fall for that “Shoot for the moon. Even if you miss, you'll land among the stars.” shit. If you are going to shoot for the stars *ad æternum* even though you know you'll never reach them, then shoot for the fucking moon in the first place.
 
-####Know when to quit
-
+##Know when to quit
 That's a hard one. I took me years to accept that sometimes it is OK to quit. Sometimes you're wasting energy in something that is just not worth it, or that you know it will never work. Quit now! Don't waste time on something you know is never gonna happen. Focus your energy on what's achievable and really important.
 I'm not saying that scientists that are involved in theories for decades are stupid, but *maybe* if they spend 20 years without any palpable progress, then *maybe* it's best to accept the truth and move on.
 
-####Little victories are victories too
-
+##Little victories are victories too
 This might feel a bit sad, but I tend to celebrate a lot of meaningless things.
 Like when I start writing, I feel really good once I have the first paragraph done.
 It might seem stupid, but it really gives you the feeling of progress.
 Not only that but the fact that you’re happy and proud of what you did helps you feel that you’re doing the right thing.
 
 
-####Be happy
-
+##Be happy
 At the end of the day, the important thing is to be happy with what you did and know that you gave it your best. Trying to push harder every day is going to stress you. As that stress gets bigger it leads to sadness and unhappiness that eventually leads to a shitty life.
 So embrace your averageness and celebrate it, because it's part of who you are.
 

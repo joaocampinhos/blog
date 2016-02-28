@@ -12,7 +12,7 @@ And what's better than a blazing fast website? Nothing I say. We already minify 
 
 Let's start this series with a simple and cheesy one: colors. I say cheesy because we can argue that the way we specify our colors won't hurt our loading times. I'm inclined to agree, but I can think of some use cases that require extreme optimization, and for those use cases this might be useful.
 
-##The problem
+#The problem
 
 There are a lot of ways to specify colors in CSS. for example this color
 
@@ -30,7 +30,7 @@ background-color: hsl(270,50%,40%);
 
 The question is: Which one should I use? If we aproach this from a size prespective, `#639` is the smalest and thereof the best! But is it always like that? let's analyze this further.
 
-##The Tests
+#The Tests
 
 To test this, I used [jsperf](http://jsperf.com) to automate the process.
 I used the following browsers:
@@ -56,28 +56,28 @@ And I created three revisions to test three different things.
 
 You can check the tests and results [here](http://jsperf.com/colors). You can even run the tests yourself to compare with my results.
 
-##The Results
+#The Results
 
 _Note that those are my results with my machine and my browsers. Your mileage may vary._
 
-####Rev 1
+##Rev 1
 
 [![Revision 1 Results](/public/images/Rev1.png)](/public/images/Rev1.png)
 
 This is the base of our tests. And we can see that the short hex is always the best option followed by long hex. The difference between Named color and RGB is marginal on Desktop Chrome, but it’s noticeable on Safari and Chrome Mobile. HSL is a disappointment.
 
-####Rev 2
+##Rev 2
 
 [![Revision 2 Results](/public/images/Rev2.png)](/public/images/Rev2.png)
 
 HSL was worse on the first test and when we add alpha to the game, HSLA loses again, hard. Use RGBA **always**.
 
-####Rev 3
+##Rev 3
 
 [![Revision 3 Results](/public/images/Rev3.png)](/public/images/Rev3.png)
 
 As I suspected, lower case vs upper case hexadecimal notation is just a matter of preference that don't alter performance at all.
 
-###tl:dr
+##tl:dr
 
 If you are paranoid about performance, use hex when declaring your colors and short hex whenever possible. If you need transparency use RGBA and stay the hell away from HSL(A).
