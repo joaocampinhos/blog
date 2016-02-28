@@ -7,7 +7,12 @@ category: meta
 ---
 
 <div class="mt3 pb4 container-s center">
-  <h1 class="caps color-meta">Archive</h1>
+  <h1 class="spacing-l caps color-meta">Archive</h1>
+  <div class="mb4">
+  {% for category in site.categories %}
+  <a href="#{{category | first}}">{{category | first}}</a>
+    {% endfor %}
+  </div>
   {% for category in site.categories %}
     <div class="caps" id="{{ category | first | remove:' ' }}">
       <h2 class="color-{{category | first}}">{{ category | first }}</h2>

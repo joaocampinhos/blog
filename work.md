@@ -3,6 +3,7 @@ layout: page
 title: Work
 description: About João Campinhos’ work and life
 permalink: /work/
+category: meta
 ---
 
 Why hello there! My name is João Campinhos and I'm a computer engineering student at [FCT-UNL](http://www.fct.unl.pt/). Overall I'm just a regular guy that likes to code and build stuff. When I'm not ranting about college and struggling to find 25 hours on a single day, you can probably find me reading *everything* about technology and science.
