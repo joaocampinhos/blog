@@ -10,8 +10,9 @@
   font-weight: bold;
 }
 
-.reversefootnote {
+.post-body .reversefootnote {
   font-weight: bold;
+  background-image: none;
 }
 
 .footnotes:before {

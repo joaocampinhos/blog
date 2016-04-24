@@ -438,3 +438,6 @@ abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #424242;
 }
+figure {
+  margin: 0 auto;
+}

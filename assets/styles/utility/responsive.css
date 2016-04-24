@@ -31,3 +31,6 @@
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+.left { float: left; }
+.right { float: right; }

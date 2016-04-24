@@ -10,6 +10,7 @@
 
 @import 'generics/normalize';
 @import 'generics/box-sizing';
+@import 'generics/clearfix';
 
 @import 'elements/page';
 @import 'elements/headings';

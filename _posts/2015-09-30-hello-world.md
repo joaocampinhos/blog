@@ -81,7 +81,7 @@ And tables
 </table>
 
 And code
-{% highlight javascript %}
+{% highlight JavaScript %}
 
 // Please no!
 function sum(a, b)

@@ -44,20 +44,19 @@
   </main>
 
   <footer class="center p2 inverse">
-    © 2016 João Campinhos • <a class="color-meta" href="/contact">contact</a>
+    © 2016 João Campinhos • <a class="color-meta" href="/contact">contact</a> • <a class="color-meta" href="/atom.xml">RSS</a>
+
   </footer>
 
-  <!--<script>unorphan('h1, h2, h3, p, li, .unorphan')</script>-->
   <script>
-document.getElementById('tg').addEventListener('click', function(e) {
-  e.preventDefault();
+    document.getElementById('tg').addEventListener('click', function(e) {
+      e.preventDefault();
 
-  this.classList.toggle('is-open');
-  document.getElementById('overlay').classList.toggle('is-open');
+      this.classList.toggle('is-open');
+      document.getElementById('overlay').classList.toggle('is-open');
 
-  //document.getElementById('overlay').classList.toggle('is-active');
-});
-window.scrollTo(0,1);
+    });
+    window.scrollTo(0,1);
   </script>
 
   </body>

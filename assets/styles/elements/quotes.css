@@ -4,6 +4,7 @@ blockquote {
   font-style: oblique;
   transition: all 0.5s;
   margin: 3em auto;
+  padding: 0 2em;
   &:hover {
     opacity: 1;
   }

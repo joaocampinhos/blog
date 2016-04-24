@@ -6,18 +6,21 @@ permalink: /contact/
 category: meta
 ---
 
-Why hello there! My name is João Campinhos and I'm a computer engineering student at [FCT-UNL](http://www.fct.unl.pt/). Overall I'm just a regular guy that likes to code and build stuff. When I'm not ranting about college and struggling to find 25 hours on a single day, you can probably find me reading *everything* about technology and science.
+<div class="col center col-4">
+  <a class="link-none color-development beta" href="http://twitter.com/joaocampinhos">Twitter</a>
+</div>
+<div class="col center col-4">
+  <a class="link-none beta" href="http://github.com/joaocampinhos">Github</a>
+</div>
+<div class="col center col-4 mb3">
+  <a class="link-none color-personal beta" href="mailto:joao@campinhos.pt">Email</a>
+</div>
 
-I'm fascinated by the human being and everything that we've invented, like the wheel, the selfie stick or the Internet. And because the Internet is a big deal and I feel like I owe something to those Internet guys, here I am on a mission to create a better Internet for everyone, whatever that means.
+Feel free to contact me for pretty much anything. I would love to read your take on some of the topics that I cover here since I'm always interested in knowing different opinions.
 
-If you want to get in touch with me, it's best if you ping me on Twitter [@joaocampinhos](https://twitter.com/joaocampinhos) or just do it the traditional way and send me an [email](mailto:joao@campinhos.pt). However, if you are a recruiter and you love your generic emails, don't bother.
+If you want to know anything about me ask away on my [GitHub AMA](https://github.com/joaocampinhos/ama) repository.
 
-# About the site
+The fastest and more reliable way to contact me is probably via [email](mailto:joao@campinhos.pt), but feel free to [tweet](https://twitter.com/joaocampinhos) me if you have a simple question or want to chat on a more informal tone.
 
-This website is my corner office on the open space that the web is. It's where I write about everything and anything, and most importantly, it's mine and no one else's space. And because it's my space I did it my way.
-
-+ Powered by the lovely guys at [Github](https://github.com/), it's completely [open source](https://github.com/joaocampinhos/blog) so you're free to judge my code (please don't)
-+ Since it's using Github Pages, it uses [Jekyll](https://jekyllrb.com/) under the hood, and it works, so... yay?
-+ I'm also using some code from [Poole](http://getpoole.com/) made by the [Bootstrap guy](https://twitter.com/mdo).
-+ Oh and fonts! I'm using some cool fonts that I spent a couple hours picking (please don't judge me, I like pretty things). I'm using [Montserrat](https://www.google.com/fonts/specimen/Montserrat) for the headings and [Crimson Text](https://www.google.com/fonts/specimen/Crimson+Text) for the body. For the code snippets, I'm using [Source Code Pro](https://www.google.com/fonts/specimen/Source+Code+Pro) because it has pro in the name, and that means it's a professional font, because that's a thing.
+I am also always looking for challenges so if you think I might be a good fit, head over to my [work](/work) page to discover how can I help you.
 

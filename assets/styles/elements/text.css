@@ -3,13 +3,31 @@ p {
   line-height: 1.5;
 }
 
-a {
+a, .link-none, .link-simple {
   color: inherit;
   text-decoration: none;
+  background-image: none;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.link-simple:hover {
+  box-shadow: inset 0 -1px var(--color-primary);
 }
 
 .post-body {
   line-height: 1.5;
+}
+.post-body,
+article {
+  h1 a { background-position: 0 32px; }
+  h2 a { background-position: 0 24px; }
+  a {
+    background-size: 2px 2px;
+    background-position: 0 18px;
+    background-repeat: repeat-x;
+  }
 }
 
 

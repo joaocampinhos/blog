@@ -12,6 +12,7 @@
     ::selection,.footnote{background:#336efb}
     ::-moz-selection{background:#336efb}
     .reversefootnote{color:#336efb}
+    article a, .post-body a {background-image: linear-gradient(to bottom,rgba(51,110,251,0) 50%,rgba(51,110,251,1) 50%);}
   </style>
   {% elsif page.category == 'design' %}
   <meta name="theme-color" content="#28dba4">
@@ -19,6 +20,7 @@
     ::selection,.footnote{background:#28dba4}
     ::-moz-selection{background:#28dba4}
     .reversefootnote{color:#28bda4}
+    article a, .post-body a {background-image: linear-gradient(to bottom,rgba(40,219,164,0) 50%,rgba(40,219,164,1) 50%);}
   </style>
   {% elsif page.category == 'personal' %}
   <meta name="theme-color" content="#e44053">
@@ -26,6 +28,7 @@
     ::selection,.footnote{background:#e44053}
     ::-moz-selection{background:#e44053}
     .reversefootnote{color:#e44053}
+    article a, .post-body a {background-image: linear-gradient(to bottom,rgba(228,64,83,0) 50%,rgba(228,64,83,1) 50%);}
   </style>
   {% else %}
   <meta name="theme-color" content="#cfba88">
@@ -33,6 +36,7 @@
     ::selection,.footnote{background:#cfba88}
     ::-moz-selection{background:#cfba88}
     .footnote,.reversefootnote{color:#cfba88}
+    article a, .post-body a {background-image: linear-gradient(to bottom,rgba(207,183,136,0) 50%,rgba(207,183,136,1) 50%);}
   </style>
   {% endif %}
 
@@ -47,7 +51,28 @@
   <link rel="stylesheet" href="/public/styles.css">
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/public/apple-touch-icon-57x57.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="60x60" href="/public/apple-touch-icon-60x60.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="72x72" href="/public/apple-touch-icon-72x72.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="76x76" href="/public/apple-touch-icon-76x76.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="114x114" href="/public/apple-touch-icon-114x114.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="120x120" href="/public/apple-touch-icon-120x120.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="144x144" href="/public/apple-touch-icon-144x144.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="152x152" href="/public/apple-touch-icon-152x152.png?v=9BBd9EGkQ4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon-180x180.png?v=9BBd9EGkQ4">
+  <link rel="icon" type="image/png" href="/public/favicon-32x32.png?v=9BBd9EGkQ4" sizes="32x32">
+  <link rel="icon" type="image/png" href="/public/favicon-194x194.png?v=9BBd9EGkQ4" sizes="194x194">
+  <link rel="icon" type="image/png" href="/public/favicon-96x96.png?v=9BBd9EGkQ4" sizes="96x96">
+  <link rel="icon" type="image/png" href="/public/android-chrome-192x192.png?v=9BBd9EGkQ4" sizes="192x192">
+  <link rel="icon" type="image/png" href="/public/favicon-16x16.png?v=9BBd9EGkQ4" sizes="16x16">
+  <link rel="manifest" href="/public/manifest.json?v=9BBd9EGkQ4">
+  <link rel="mask-icon" href="/public/safari-pinned-tab.svg?v=9BBd9EGkQ4" color="#cfba88">
+  <link rel="shortcut icon" href="/public/favicon.ico?v=9BBd9EGkQ4">
+  <meta name="apple-mobile-web-app-title" content="Campinhos.pt">
+  <meta name="application-name" content="Campinhos.pt">
+  <meta name="msapplication-TileColor" content="#cfba88">
+  <meta name="msapplication-TileImage" content="/public/mstile-144x144.png?v=9BBd9EGkQ4">
+  <meta name="theme-color" content="#cfba88">
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.author.name }}" href="/atom.xml">
